@@ -25,3 +25,12 @@ python polyglotgen.py -p yourscript.py -l yourscript.lua -o output.lua
 Lua sees a normal script, including a fake exec function and some hidden Lua code inside a Python multiline string.
 Python treats everything in the triple-quoted string as a string and uses .replace() to simulate the Lua part, before exec-ing the real Python code.
 
+```
+--eval("""
+function exec(s) end
+print("Hello from Lua")
+--""".replace('\nfunction exec(s) end\nprint("Hello from Lua")\n--', '1+1'))
+
+exec("print(\"Hello from Python\")")
+```
+
