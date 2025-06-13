@@ -16,7 +16,7 @@ This tool lets you generate a **polyglot script** that runs valid code in both *
 python polyglotgen.py -p yourscript.py -l yourscript.lua -o output.lua
 ```
 
--p / --python: Path to your Python file
+-p / --python: Path to your Python file <br>
 -l / --lua: Path to your Lua file
 -o / --output: (Optional) Output polyglot file. If omitted, output is printed.
 
