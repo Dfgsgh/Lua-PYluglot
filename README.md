@@ -17,7 +17,7 @@ python polyglotgen.py -p yourscript.py -l yourscript.lua -o output.lua
 ```
 
 -p / --python: Path to your Python file <br>
--l / --lua: Path to your Lua file
+-l / --lua: Path to your Lua file<br>
 -o / --output: (Optional) Output polyglot file. If omitted, output is printed.
 
 ## 📄 How It Works
